@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Portfolio | AVS Group of Companies</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="../css/avs-portfolio.css">
+</head>
+<body class="bg-gradient-to-br from-[#0f172a] to-[#1e293b] min-h-screen">
+
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <div class="mobile-sidebar" id="mobile-sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-logo">AVS<span>Portfolio</span></div>
+            <button class="close-menu" id="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        
+        <ul class="mobile-menu">
+            <li>
+                <a href="../index.html">
+                    <i class="fas fa-home"></i>
+                    <div class="menu-text">
+                        <div class="menu-title">Home</div>
+                        <div class="menu-description">Return to main page</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./avs-model.html">
+                    <i class="fas fa-address-book"></i>
+                    <div class="menu-text">
+                        <div class="menu-title">AVS Model</div>
+                        <div class="menu-description">Business model details</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./avs-portfolio.html">
+                    <i class="fas fa-briefcase"></i>
+                    <div class="menu-text">
+                        <div class="menu-title">Portfolio</div>
+                        <div class="menu-description">View our work samples</div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="./avs-contact.html">
+                    <i class="fas fa-envelope"></i>
+                    <div class="menu-text">
+                        <div class="menu-title">Contact</div>
+                        <div class="menu-description">Get in touch with us</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        
+        <div class="sidebar-footer">
+            <p>Connect with Tika Thapa</p>
+            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <header class="max-w-7xl mx-auto flex flex-wrap justify-center sm:justify-between items-center py-5 px-5 bg-[#1e293b] shadow-xl rounded-2xl mt-5 slide-up">
+        <div class="flex items-center text-3xl font-bold mb-4 sm:mb-0">
+           <img src="../images/logo-image.png" alt="AVS Logo" class="w-25 h-20 mr-2 rounded-full">
+            <span class="text-white">AVS</span><span class="text-emerald-400"> Portfolio</span>
+        </div>
+        <nav class="header-links desktop-nav">
+            <ul class="flex flex-wrap justify-center space-x-4 sm:space-x-8">
+                <li><a href="../Index.html" class="font-medium">Home</a></li>
+                <li><a href="../pages/avs-model.html" class="font-medium">Avs Model</a></li>
+                <li><a href="./avs-portfolio.html" class="font-medium">Portfolio</a></li>
+                <li><a href="./avs-contact.html" class="font-medium">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="hamburger" id="hamburger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+    </header>
+
+    <section class="text-center py-20 sm:py-28 bg-gradient-to-r from-[#1e293b] to-[#0f172a] rounded-2xl shadow-2xl max-w-7xl mx-auto my-10 px-6 slide-up">
+        <h1 class="text-4xl sm:text-6xl font-extrabold text-white mb-6 leading-tight">
+            Our Diverse <span class="text-emerald-400">Portfolio</span>
+        </h1>
+        <p class="text-lg sm:text-xl text-slate-300 max-w-3xl mx-auto mb-8">
+            Explore the wide range of businesses and ventures under the AVS Group, built on a foundation of quality and innovation.
+        </p>
+        <div class="flex justify-center gap-4">
+            <a href="#portfolio" class="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-3 rounded-full font-bold transition-all shadow-lg hover:shadow-emerald-500/20 hover-grow">
+                Explore Portfolio
+            </a>
+            <a href="#contact" class="bg-transparent hover:bg-slate-700 text-emerald-400 border border-emerald-400 px-8 py-3 rounded-full font-bold transition-all hover-grow">
+                Contact Us
+            </a>
+        </div>
+    </section>
+
+    <div id="portfolio" class="max-w-7xl mx-auto px-5 py-10">
+        <section id="avs-farms" class="py-12 sm:py-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl mb-16 slide-up">
+            <div class="text-center mb-12 sm:mb-20 px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 section-title">AVS Farms</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Discover the source of our fresh, high-quality products from our various dairy and agricultural farms.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div class="image-container fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80" alt="Dairy Farm">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Dairy Excellence</h3>
+                        <p class="text-sm">Premium dairy products</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1471194402529-8e0f5a675de6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Farm Landscape">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Sustainable Agriculture</h3>
+                        <p class="text-sm">Organic farming practices</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1534338580013-382cf48bd435?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Farm Animals">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Animal Welfare</h3>
+                        <p class="text-sm">Ethical treatment standards</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-4">
+                    <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Farm Products">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Farm Fresh Produce</h3>
+                        <p class="text-sm">Harvested daily</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avs-restaurants" class="py-12 sm:py-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl mb-16 slide-up">
+            <div class="text-center mb-12 sm:mb-20 px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 section-title">AVS Restaurants</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Experience our farm-to-table philosophy at our restaurants, offering authentic and delicious cuisines.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div class="image-container fade-in delay-1">
+                    <img src="../images/avs-restaurant/img2.jpg" alt="Restaurant Interior">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Fine Dining</h3>
+                        <p class="text-sm">Elegant atmosphere</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-2">
+                    <img src="../images/avs-restaurant/img4.jpg" alt="Restaurant Exterior">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Signature Locations</h3>
+                        <p class="text-sm">Prime destinations</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-3">
+                    <img src="../images/avs-restaurant/img1.jpg" alt="Gourmet Dish">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Gourmet Cuisine</h3>
+                        <p class="text-sm">Master chef creations</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-4">
+                    <img src="../images/avs-restaurant/img3.jpg" alt="Dining Experience">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Exceptional Service</h3>
+                        <p class="text-sm">Memorable experiences</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avs-food" class="py-12 sm:py-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl mb-16 slide-up">
+            <div class="text-center mb-12 sm:mb-20 px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 section-title">AVS Food Products</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Discover our premium range of food products made from the freshest ingredients straight from our farms.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div class="image-container fade-in delay-1">
+                    <img src="../images/avs-food/ghee.webp" alt="Dairy Products">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Dairy Selection</h3>
+                        <p class="text-sm">Ghee</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-2">
+                    <img src="../images/avs-food/milk.jpg" alt="Organic Produce">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Dairy Selection</h3>
+                        <p class="text-sm">milk</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-3">
+                    <img src="../images/avs-food/oil.jpg" alt="Meat Products">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Gourmet Packaged</h3>
+                        <p class="text-sm">oil</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-4">
+                    <img src="../images/avs-food/aata.jpg" alt="Packaged Goods">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Gourmet Packaged</h3>
+                        <p class="text-sm">Aata</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="avs-members" class="py-12 sm:py-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl mb-16 slide-up">
+            <div class="text-center mb-12 sm:mb-20 px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 section-title">Our Team</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Meet the dedicated professionals driving innovation and excellence across the AVS Group.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div class="image-container fade-in delay-1">
+                    <img src="../images/tika_image.png" alt="Leadership Team">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Tika Thapa(Visionary guidance)</h3>
+                        <p class="text-sm">Leadership</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-2">
+                    <img src="../images/avs-members/tika-leader.jpg" alt="Agriculture Experts">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Team meeting</h3>
+                        <p class="text-sm">With Tika Sir</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-3">
+                    <img src="../images/avs-members/Dinesh-sir.jpg" alt="Culinary Team">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Dinesh Sir</h3>
+                        <p class="text-sm">Supportive Person</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-4">
+                    <img src="../images/avs-members/youth-img.jpg" alt="Operations Team">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">AVS Youth Group </h3>
+                        <p class="text-sm">Young innovators</p>
+                    </div>
+                </div>
+                  <div class="image-container fade-in delay-4">
+                    <img src="../images/avs-members/youth-img2.jpg" alt="Operations Team">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">AVS Youth Group </h3>
+                        <p class="text-sm">Enjoyment squad</p>
+                    </div>
+                </div>
+            </div>
+           
+        </section>
+
+        <section id="avs-properties" class="py-12 sm:py-20 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-xl mb-16 slide-up">
+            <div class="text-center mb-12 sm:mb-20 px-4">
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4 section-title">Properties & Villas</h2>
+                <p class="text-slate-300 max-w-2xl mx-auto text-lg">
+                    Discover our exclusive portfolio of luxury properties and vacation villas in prime locations.
+                </p>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
+                <div class="image-container fade-in delay-1">
+                    <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80" alt="Luxury Villa">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Seaside Villas</h3>
+                        <p class="text-sm">Oceanfront luxury</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-2">
+                    <img src="https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Mountain Retreat">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Mountain Retreats</h3>
+                        <p class="text-sm">Alpine serenity</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-3">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Urban Residences">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Urban Residences</h3>
+                        <p class="text-sm">City center luxury</p>
+                    </div>
+                </div>
+                <div class="image-container fade-in delay-4">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Farm Estates">
+                    <div class="image-overlay">
+                        <h3 class="font-bold text-lg">Farm Estates</h3>
+                        <p class="text-sm">Country living</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="py-16 sm:py-24 bg-gradient-to-r from-emerald-600 to-emerald-700 text-white slide-up">
+        <div class="max-w-7xl mx-auto px-5">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-6">Our Impact in Numbers</h2>
+                <p class="max-w-2xl mx-auto text-lg">The AVS Group has grown exponentially since our founding in 2020, making a significant impact across multiple industries.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10 text-center">
+                <div class="bg-slate-800/30 backdrop-blur-sm py-8 rounded-2xl shadow-lg">
+                    <div class="text-3xl sm:text-5xl font-bold mb-2 counter" data-target="7">0+</div>
+                    <div class="text-sm sm:text-base uppercase tracking-wider font-medium">Farms</div>
+                </div>
+                <div class="bg-slate-800/30 backdrop-blur-sm py-8 rounded-2xl shadow-lg">
+                    <div class="text-3xl sm:text-5xl font-bold mb-2 counter" data-target="2200">0+</div>
+                    <div class="text-sm sm:text-base uppercase tracking-wider font-medium">Animals</div>
+                </div>
+                <div class="bg-slate-800/30 backdrop-blur-sm py-8 rounded-2xl shadow-lg">
+                    <div class="text-3xl sm:text-5xl font-bold mb-2 counter" data-target="5">0</div>
+                    <div class="text-sm sm:text-base uppercase tracking-wider font-medium">Restaurants</div>
+                </div>
+                <div class="bg-slate-800/30 backdrop-blur-sm py-8 rounded-2xl shadow-lg">
+                    <div class="text-3xl sm:text-5xl font-bold mb-2 counter" data-target="250">0+</div>
+                    <div class="text-sm sm:text-base uppercase tracking-wider font-medium">Employees</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="invest" class="py-16 sm:py-24 bg-slate-800/50 backdrop-blur-sm rounded-2xl shadow-2xl max-w-7xl mx-auto my-16 slide-up">
+        <div class="max-w-4xl mx-auto px-5 text-center">
+            <h2 class="text-3xl sm:text-4xl font-bold text-white mb-6">Join the AVS Family</h2>
+            <p class="text-slate-300 mb-10 max-w-2xl mx-auto text-lg">Discover investment opportunities and become part of our growing business community.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-5">
+                <a href="./avs-contact.html" class="bg-emerald-500 hover:bg-emerald-600 text-white px-10 py-4 rounded-full font-bold transition-all shadow-lg hover:shadow-emerald-500/30 hover-grow">
+                    Invest with Us
+                </a>
+                <a href="./avs-model.html" class="bg-transparent hover:bg-slate-700 text-emerald-400 border border-emerald-400 px-10 py-4 rounded-full font-bold transition-all hover-grow">
+                    View Business Model
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="py-12 bg-slate-900/80 backdrop-blur-sm">
+    <div class="max-w-7xl mx-auto px-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <div class="flex items-center text-2xl font-bold mb-6">
+                    <div class=" w-12 h-12 mr-3 rounded-xl flex items-center justify-center">
+                       <img src="../images/logo-image.png"></img>
+                    </div>
+                    <span class="text-white">AVS</span><span class="text-emerald-400"> Group</span>
+                </div>
+                <p class="text-slate-400 mb-6">
+                    Building sustainable businesses through innovation and quality since 2020.
+                </p>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-slate-400 hover:text-emerald-400 transition">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-emerald-400 transition">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-emerald-400 transition">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="text-slate-400 hover:text-emerald-400 transition">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-white text-lg font-bold mb-6">Quick Links</h3>
+                <ul class="space-y-3">
+                    <li><a href="../index.html" class="text-slate-400 hover:text-emerald-400 transition">Home</a></li>
+                    <li><a href="../pages/avs-model.html" class="text-slate-400 hover:text-emerald-400 transition">Avs Model</a></li>
+                    <li><a href="../pages/avs-portfolio.html" class="text-slate-400 hover:text-emerald-400 transition">Portfolio</a></li>
+                    <li><a href="../pages/avs-contact.html" class="text-slate-400 hover:text-emerald-400 transition">Contact</a></li>
+                    
+                </ul>
+            </div>
+            
+            <div>
+                <h3 class="text-white text-lg font-bold mb-6">Contact Us</h3>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start">
+                        <i class="fas fa-map-marker-alt mt-1 mr-3 text-emerald-400"></i>
+                        <span>KH NO 936, avs dairy ,Village, Fatehpur Beri, New Delhi, Delhi 110074, India</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-phone mt-1 mr-3 text-emerald-400"></i>
+                        <span>+91-9999156111</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-envelope mt-1 mr-3 text-emerald-400"></i>
+                        <span> avsdairyprojects@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="border-t border-slate-800 mt-12 pt-8 text-center text-slate-500">
+            <p>© 2023 AVS Group of Companies. All rights reserved.</p>
+            <p class="text-xs mt-2 text-slate-600">
+                Disclaimer: This portfolio showcases Tika Thapa's work with AVS Group. Not an official AVS website.
+            </p>
+        </div>
+    </div>
+</footer>
+
+    <div id="imageModal" class="modal">
+        <span class="modal-close">&times;</span>
+        <img class="modal-content" id="modalImage" alt="Enlarged Portfolio Image">
+    </div>
+
+  <script src="../js/avs-portfolio.js"></script>
+</body>
+</html>
