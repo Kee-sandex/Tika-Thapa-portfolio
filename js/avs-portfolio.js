@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', () => {
   // Mobile menu toggle functionality
   const hamburger = document.getElementById('hamburger-menu');
@@ -36,8 +35,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // Modal functionality
-  const imageContainers = document.querySelectorAll('.image-container');
+  // Image Modal functionality
+  const imageContainers = document.querySelectorAll('.image-container:not(.video-card)');
   const modal = document.getElementById('imageModal');
   const modalImage = document.getElementById('modalImage');
   const closeBtn = document.querySelector('.modal-close');
@@ -64,6 +63,26 @@ document.addEventListener('DOMContentLoaded', () => {
     if (e.target === modal) closeModal();
   });
 
+  // Video Modal functionality
+  const videoModal = document.getElementById('videoModal');
+  const videoIframe = document.getElementById('videoIframe');
+
+  window.openVideoModal = function (videoUrl) {
+    videoIframe.src = videoUrl;
+    videoModal.style.display = 'flex';
+  }
+
+  window.closeVideoModal = function () {
+    videoIframe.src = '';
+    videoModal.style.display = 'none';
+  }
+
+  videoModal.addEventListener('click', (e) => {
+    if (e.target === videoModal) {
+      closeVideoModal();
+    }
+  });
+
   // Counter animation
   const counters = document.querySelectorAll('.counter');
   const speed = 200;
@@ -82,7 +101,6 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     };
 
-    // Start counting when element is in viewport
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
