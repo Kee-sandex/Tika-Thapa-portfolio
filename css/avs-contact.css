@@ -1,11 +1,11 @@
 :root {
-  --primary-dark: #0f172a;
-  --primary: #1e293b;
-  --accent: #10b981;
-  --accent-light: #34d399;
-  --light-text: #f8fafc;
-  --medium-text: #cbd5e1;
-  --disclaimer-bg: linear-gradient(90deg, rgba(220, 53, 69, 0.95), rgba(200, 40, 55, 0.95));
+  --primary-dark: #f0f4f8; /* Changed from dark blue to light gray */
+  --primary: #ffffff; /* Changed from blue-gray to white */
+  --accent: #4a90e2; /* Changed from green to blue */
+  --accent-light: #5d9ce7; /* Changed from light green to light blue */
+  --light-text: #333333; /* Changed from light white to dark gray for contrast */
+  --medium-text: #555555; /* Changed from light gray to medium gray */
+  --disclaimer-bg: #e2e8f0; /* Changed from red to a soft gray */
 }
 
 * {
@@ -16,7 +16,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+  background: var(--primary); /* Changed from gradient to a single color */
   color: var(--light-text);
   background-attachment: fixed;
   line-height: 1.6;
@@ -27,14 +27,14 @@ body {
 /* Disclaimer Banner */
 .disclaimer-banner {
   background: var(--disclaimer-bg);
-  color: white;
+  color: var(--medium-text);
   padding: 14px 20px;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   font-family: 'Inter', sans-serif;
   transition: all 0.3s ease-in-out;
 }
@@ -64,7 +64,7 @@ body {
 .disclaimer-close {
   background: transparent;
   border: none;
-  color: white;
+  color: var(--medium-text);
   cursor: pointer;
   font-size: 22px;
   padding: 4px;
@@ -73,7 +73,7 @@ body {
 }
 
 .disclaimer-close:hover {
-  color: #f8f9fa;
+  color: #888;
 }
 
 .container {
@@ -92,8 +92,8 @@ body {
 }
 
 .lang-btn {
-  background: rgba(30, 41, 59, 0.8);
-  color: var(--accent-light);
+  background: var(--primary-dark);
+  color: var(--accent);
   border: 1px solid var(--accent);
   padding: 8px 16px;
   border-radius: 30px;
@@ -108,7 +108,7 @@ body {
 
 .lang-btn:hover {
   background: var(--accent);
-  color: var(--primary-dark);
+  color: white;
 }
 
 /* Header Styles */
@@ -117,12 +117,13 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   position: relative;
-  background: rgba(15, 23, 42, 0.8);
+  background: var(--primary-dark);
   border-radius: 0 0 12px 12px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .logo {
@@ -150,7 +151,6 @@ nav {
   text-decoration: none;
   color: var(--medium-text);
   transition: color 0.3s;
-  font-weight: bold;
   position: relative;
   display: block;
   padding: 8px 0;
@@ -168,7 +168,7 @@ nav {
 }
 
 .nav-links a:hover {
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .nav-links a:hover::after {
@@ -189,11 +189,12 @@ nav {
 .contact-hero {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(45deg, rgba(15, 23, 42, 0.8), rgba(16, 185, 129, 0.8));
+  background: var(--primary-dark);
   border-radius: 12px;
   margin: 20px 0;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .contact-hero h1 {
@@ -218,19 +219,19 @@ nav {
   display: inline-block;
   padding: 14px 32px;
   background: var(--accent);
-  color: var(--primary-dark);
+  color: white;
   border-radius: 50px;
   text-decoration: none;
   font-weight: bold;
   transition: transform 0.3s, box-shadow 0.3s;
-  box-shadow: 0 4px 8px rgba(16, 185, 129, 0.4);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   font-size: 1.1rem;
   margin-top: 10px;
 }
 
 .cta-button:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 16px rgba(16, 185, 129, 0.6);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /* Investment Section */
@@ -244,15 +245,15 @@ nav {
 .investment-content {
   flex: 1;
   min-width: 300px;
-  background: rgba(30, 41, 59, 0.7);
+  background: var(--primary-dark);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .investment-content h2 {
   font-size: 1.8rem;
-  color: var(--accent-light);
+  color: var(--accent);
   margin-top: 0;
   position: relative;
   padding-bottom: 15px;
@@ -277,7 +278,7 @@ nav {
 }
 
 .benefit-item {
-  background: rgba(16, 185, 129, 0.1);
+  background: rgba(74, 144, 226, 0.1); /* Lighter blue */
   border-radius: 8px;
   padding: 20px 15px;
   text-align: center;
@@ -285,7 +286,7 @@ nav {
 }
 
 .benefit-item:hover {
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(74, 144, 226, 0.2);
   transform: translateY(-5px);
 }
 
@@ -299,10 +300,10 @@ nav {
 .form-container {
   flex: 1;
   min-width: 300px;
-  background: rgba(30, 41, 59, 0.7);
+  background: var(--primary-dark);
   border-radius: 12px;
   padding: 30px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 
 .form-header {
@@ -315,7 +316,7 @@ nav {
 .form-icon {
   width: 70px;
   height: 70px;
-  background: rgba(16, 185, 129, 0.2);
+  background: rgba(74, 144, 226, 0.1);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -327,7 +328,7 @@ nav {
 
 .form-container h2 {
   font-size: 1.8rem;
-  color: var(--accent-light);
+  color: var(--accent);
   margin: 0;
 }
 
@@ -339,10 +340,11 @@ nav {
 }
 
 .form-embed {
-  background: rgba(15, 23, 42, 0.5);
+  background: var(--primary);
   border-radius: 8px;
   padding: 20px;
   min-height: 400px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .form-embed iframe {
@@ -354,12 +356,12 @@ nav {
 
 /* Signature Section */
 .signature-section {
-  background: rgba(30, 41, 59, 0.7);
+  background: var(--primary-dark);
   border-radius: 12px;
   padding: 30px;
   text-align: center;
   margin: 40px 0;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
   position: relative;
   overflow: hidden;
 }
@@ -381,14 +383,14 @@ nav {
 .signature-image img {
   max-width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .signature-name {
   font-size: 1.8rem;
   font-weight: bold;
   margin: 15px 0;
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .signature-title {
@@ -404,13 +406,13 @@ nav {
   max-width: 700px;
   margin: 0 auto;
   padding: 20px;
-  background: rgba(15, 23, 42, 0.4);
+  background: var(--primary);
   border-radius: 12px;
   position: relative;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
 }
 
 .signature-quote::before {
-
   position: absolute;
   top: -20px;
   left: 20px;
@@ -424,10 +426,11 @@ nav {
 footer {
   text-align: center;
   padding: 30px 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   margin-top: 30px;
-  background: rgba(15, 23, 42, 0.7);
+  background: var(--primary-dark);
   border-radius: 12px;
+  box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.05);
 }
 
 .social-links {
@@ -445,7 +448,7 @@ footer {
   width: 45px;
   height: 45px;
   background: var(--accent);
-  color: var(--primary-dark);
+  color: white;
   border-radius: 50%;
   transition: background-color 0.3s, transform 0.3s;
   font-size: 18px;
@@ -536,7 +539,7 @@ footer {
   background: var(--primary-dark);
   z-index: 999;
   transition: all 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.5);
+  box-shadow: -5px 0 25px rgba(0, 0, 0, 0.2);
   overflow-y: auto;
   padding: 20px;
   display: flex;
@@ -553,7 +556,7 @@ footer {
   align-items: center;
   padding-bottom: 20px;
   margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .sidebar-logo {
@@ -583,7 +586,7 @@ footer {
 .close-menu:hover {
   color: var(--accent);
   transform: rotate(90deg);
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(0, 0, 0, 0.05);
 }
 
 .mobile-menu {
@@ -600,7 +603,7 @@ footer {
 }
 
 .mobile-menu li:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(0, 0, 0, 0.05);
   transform: translateX(5px);
 }
 
@@ -645,13 +648,13 @@ footer {
 }
 
 .mobile-menu a:hover .menu-title {
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .sidebar-footer {
   margin-top: auto;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 0.8rem;
   color: var(--medium-text);
@@ -664,7 +667,7 @@ footer {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   z-index: 998;
   opacity: 0;
   visibility: hidden;
