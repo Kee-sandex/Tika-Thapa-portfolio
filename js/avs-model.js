@@ -66,7 +66,7 @@ const translations = {
     restaurantsValue: "Fatehpur Beri, Gurgaon (Gwal Pahari & Dunda Hera), Faridabad, Kotla Mubarakpur",
     businessVerticalsTitle: "Business Verticals",
     dairyLabel: "Dairy:",
-    dairyValue: "2000+ buffaloes, 200+ cows, 20,000+ liters of milk sold daily.",
+    dairyValue: "3000+ buffaloes, 250+ cows, 30,000+ liters of milk sold daily.",
     flourMillsLabel: "Flour Mills:",
     flourMillsValue: "Located in Alwar, Rajasthan, producing flour, oil, semolina, and more.",
     foodStoresLabel: "Food Stores & Restaurants:",
@@ -109,9 +109,9 @@ const translations = {
     contactTitle: "Contact Information",
     contactDescription: "For more information, please reach out to us.",
     emailLabel: "Email:",
-    emailValue: "avsdairyprojects@gmail.com",
+    emailValue: "avsdairy786@gmail.com",
     phoneLabel: "Phone:",
-    phoneValue: "+91-9999156111",
+    phoneValue: "+91-9517173555",
   },
   hi: {
     homeLink: "होम",
@@ -138,7 +138,7 @@ const translations = {
     restaurantsValue: "फतेहपुर बेरी, गुड़गांव (ग्वाल पहाड़ी और डूंडा हेरा), फरीदाबाद, कोटला मुबारकपुर",
     businessVerticalsTitle: "बिजनेस वर्टिकल",
     dairyLabel: "डेयरी:",
-    dairyValue: "2000+ भैंसे, 200+ गाय, 20,000+ लीटर दूध प्रतिदिन बेचा जाता है।",
+    dairyValue: "3000+ भैंसे, 250+ गाय, 30,000+ लीटर दूध प्रतिदिन बेचा जाता है।",
     flourMillsLabel: "आटा मिल्स:",
     flourMillsValue: "अलवर, राजस्थान में स्थित है, जो आटा, तेल, सूजी और अन्य उत्पादों का उत्पादन करता है।",
     foodStoresLabel: "फूड स्टोर और रेस्टोरेंट:",
@@ -181,9 +181,9 @@ const translations = {
     contactTitle: "संपर्क जानकारी",
     contactDescription: "अधिक जानकारी के लिए, कृपया हमसे संपर्क करें।",
     emailLabel: "ईमेल:",
-    emailValue: "avsdairyprojects@gmail.com",
+    emailValue: "avsdairy786@gmail.com",
     phoneLabel: "फ़ोन:",
-    phoneValue: "+91-9999156111",
+    phoneValue: "+91-9517173555",
   }
 };
 
