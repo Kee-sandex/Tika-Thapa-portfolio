@@ -5,7 +5,7 @@
   --accent-light: #5d9ce7; /* Changed from light green to light blue */
   --light-text: #333333; /* Changed from light white to dark gray for contrast */
   --medium-text: #555555; /* Changed from light gray to medium gray */
-  --disclaimer-bg: #e2e8f0; /* Changed from red to a soft gray */
+  --disclaimer-bg:red; /* Changed from red to a soft gray */
 }
 
 * {
@@ -52,9 +52,11 @@ body {
 
 .disclaimer-banner p {
   margin: 0;
-  font-size: 15px;
+  font-size: 20px;
   line-height: 1.6;
   flex: 1 1 auto;
+  color: white;
+  font-weight: bold;
 }
 
 .disclaimer-banner strong {
