@@ -4,16 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tika Thapa - AVS Group Leader</title>
+    <title>Tika Thhapa - AVS Group Leader</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
+   
 </head>
 
 <body>
-    <!-- Header -->
     <header>
         <div class="container nav-container">
             <a href="#" class="logo">Tika <span>Thapa</span></a>
@@ -21,96 +21,83 @@
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-
-                <li><a href="./pages/avs-model.html">AVS Model</a></li>
-                <li><a href="./pages/avs-portfolio.html">Portfolio</a></li>
-                <li><a href="./pages/avs-contact.html">Contact</a></li>
+                <li><a href="#home" data-translate-key="home">Home</a></li>
+                <li><a href="./pages/avs-model.html" data-translate-key="avs-model">AVS Model</a></li>
+                <li><a href="./pages/avs-portfolio.html" data-translate-key="portfolio">Portfolio</a></li>
+                <li><a href="./pages/avs-contact.html" data-translate-key="contact">Contact</a></li>
             </ul>
+            <div class="lang-switcher">
+                <button class="lang-btn active" id="lang-en">EN</button>
+                <button class="lang-btn" id="lang-hi">HI</button>
+            </div>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section id="home" class="hero">
         <div class="container hero-content">
             <div class="hero-text">
-                <h1>I'm <span>Tika Thapa</span></h1>
-                <div class="title">Strategic Investor & Network Leader</div>
-                <p>My journey is one of strategic investment, driven by a passion for building connections and creating
-                    opportunities.</p>
+                <h1>I'm <span data-translate-key="name">Tika Thhapa </span></h1>
+                <div class="title" data-translate-key="hero-title">Strategic Investor & Network Leader</div>
+                <p data-translate-key="hero-p1">My journey is one of strategic investment, driven by a passion for
+                    building connections and creating opportunities.</p>
 
                 <div class="hero-stats">
                     <div class="stat-card">
-                        <div class="number">5,000+</div>
-                        <div class="label">Network Members</div>
+                        <div class="number">6,000+</div>
+                        <div class="label" data-translate-key="stat1">Network Members</div>
                     </div>
-                    <div class="stat-card">
-                        <div class="number">₹12-15L</div>
-                        <div class="label">Monthly Income</div>
-                    </div>
+
                 </div>
 
                 <div class="hero-btns">
-                    <a href="./pages/avs-model.html" class="btn">Discover AVS Model</a>
-                    <a href="./pages/avs-contact.html" class="btn btn-success">Join My Team</a>
+                    <a href="#avs-model" class="btn" data-translate-key="discover-avs">Discover AVS Model</a>
+                    <a href="#contact" class="btn btn-success" data-translate-key="join-team">Join My Team</a>
                 </div>
             </div>
 
-            <div class="hero-image">
-                <img src="../images/tika_image.png" alt="Tika Thapa">
+            <div class="hero-portrait-container">
+                <img src="../images/tika_image_2.png" alt="Tika Thhapa" class="hero-portrait">
             </div>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="about">
         <div class="container">
             <div class="section-title">
-                <h2>About Me</h2>
+                <h2 data-translate-key="about-title">About Me</h2>
             </div>
             <div class="about-content">
-                <div class="about-image">
-                    <img src="../images/tika_image.png" alt="Tika Thapa">
+                <div class="about-portrait-container">
+                    <img src="../images/tika_image.png" alt="Tika Thhapa" class="about-portrait">
                 </div>
                 <div class="about-text">
-                    <h3>From ₹50,000 to ₹15 Lakh Monthly - My Transformation Journey</h3>
-                    <p>I am Tika Thapa, and my journey is one of strategic investment, driven by a passion for building
-                        connections and creating opportunities.</p>
+                    <h3 data-translate-key="about-h3">From Employee to Empowered Leader – My Journey</h3>
+                    <p data-translate-key="about-p1">I am Tika Thhapa, and my story is about turning challenges into
+                        opportunities through passion, persistence, and the right network.</p>
 
-                    <p>I have found my success as a strategic investor in AVS Group of Companies. My journey started
-                        with a demanding 9-to-8 job that paid a modest ₹50,000 per month. By investing in AVS, I have
-                        been able to build a thriving network of over 5,000 individuals, and this has enabled me to
-                        transition to a life of financial freedom, earning a monthly income of ₹12-15 lakhs.</p>
+                    <p data-translate-key="about-p2">My journey began with a demanding 9-to-8 job, but I always knew
+                        there was something greater waiting for me. Through dedication and a powerful system, I
+                        discovered a path that not only gave me freedom, but also allowed me to inspire and build a
+                        thriving community.</p>
 
-                    <p>This significant achievement is a testament to the power of a solid system and a dedicated team.
-                        My success isn't just about the numbers; it's about the freedom and opportunities it has
-                        provided. I am a charismatic, persuasive, and smooth-talking leader, and I use these qualities
-                        to inspire and guide others.</p>
+                    <p data-translate-key="about-p3">Today, I’m proud to share that transformation with others. My
+                        success isn’t just about personal growth—it’s about empowering people around me to dream bigger
+                        and achieve more. I believe in connections, teamwork, and the strength of a united vision.</p>
 
-                    <p>My goal now is to empower you to achieve the same level of success I have. Through this
-                        portfolio, I want to show you how a strategic investment, coupled with dedication and a powerful
-                        network, can transform your life. Let's build something amazing together.</p>
+                    <p data-translate-key="about-p4">If you want to know how I did it and be part of a journey that can
+                        change your life too, <strong>join my team and let’s grow together!</strong></p>
 
-                    <div class="personality">
-                        <h4>My Personality Traits:</h4>
-                        <div class="traits">
-                            <span class="trait">Charismatic</span>
-                            <span class="trait">Persuasive</span>
-                            <span class="trait">Smooth Talker</span>
-                            <span class="trait">Strategic Thinker</span>
-                            <span class="trait">Network Builder</span>
-                        </div>
+                    
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- AVS Model Section -->
     <section id="avs-model" class="avs-model">
         <div class="container avs-content">
             <div class="section-title">
-                <h2>About AVS Group of Companies</h2>
+                <h2 data-translate-key="avs-title">About AVS Group of Companies</h2>
             </div>
 
             <div class="avs-steps">
@@ -118,97 +105,105 @@
                     <div class="step-icon">
                         <i class="fas fa-user-plus"></i>
                     </div>
-                    <h3>Membership</h3>
-                    <p>Become a member by purchasing any AVS product with a ₹1,200 membership fee. You receive ₹120 in
-                        your account for purchases.</p>
+                    <h3 data-translate-key="step1-h3">Membership</h3>
+                    <p data-translate-key="step1-p">Become a member by purchasing any AVS product with a ₹1,200
+                        membership fee. </p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-icon">
                         <i class="fas fa-rupee-sign"></i>
                     </div>
-                    <h3>Investment</h3>
-                    <p>Invest any amount (e.g. ₹1,00,000). The company uses this to purchase dairy animals and
-                        infrastructure.</p>
+                    <h3 data-translate-key="step2-h3">Investment</h3>
+                    <p data-translate-key="step2-p">Invest any amount (e.g. ₹1,00,000). The company uses this to
+                        purchase dairy animals and infrastructure.</p>
                 </div>
 
                 <div class="step-card">
                     <div class="step-icon">
                         <i class="fas fa-chart-line"></i>
                     </div>
-                    <h3>3% Monthly Return</h3>
-                    <p>Receive 3% monthly return on your investment (₹3,000/month on ₹1,00,000 investment).</p>
+                    <h3 data-translate-key="step3-h3">3% Monthly Return</h3>
+                    <p data-translate-key="step3-p">Receive 3% monthly return on your investment (₹3,000/month on
+                        ₹1,00,000 investment).</p>
                 </div>
             </div>
 
             <div class="income-types">
-                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--secondary);">Income Opportunities
-                </h3>
+                <h3 style="text-align: center; margin-bottom: 1.5rem; color: var(--secondary);"
+                    data-translate-key="income-opportunities">Income Opportunities</h3>
                 <div class="income-grid">
                     <div class="income-card">
-                        <h4>Direct Income</h4>
-                        <p>Earn commissions for bringing new investors to AVS Dairy</p>
+                        <h4 data-translate-key="income-h4-1">Direct Income</h4>
+                        <p data-translate-key="income-p-1">Earn commissions for bringing new investors to AVS Dairy</p>
                     </div>
                     <div class="income-card">
-                        <h4>Level Income</h4>
-                        <p>Earn from multiple levels in your network structure</p>
+                        <h4 data-translate-key="income-h4-2">Level Income</h4>
+                        <p data-translate-key="income-p-2">Earn from multiple levels in your network structure</p>
                     </div>
                     <div class="income-card">
-                        <h4>Matching Income</h4>
-                        <p>Receive bonuses based on your team's performance</p>
+                        <h4 data-translate-key="income-h4-3">Matching Income</h4>
+                        <p data-translate-key="income-p-3">Receive bonuses based on your team's performance</p>
                     </div>
                     <div class="income-card">
-                        <h4>Leadership Bonus</h4>
-                        <p>Additional rewards for top performers and leaders</p>
+                        <h4 data-translate-key="income-h4-4">Leadership Bonus</h4>
+                        <p data-translate-key="income-p-4">Additional rewards for top performers and leaders</p>
                     </div>
                 </div>
             </div>
 
             <div style="text-align: center; margin-top: 3rem;">
-                <p>AVS provides a 48-month agreement with consistent monthly returns. The company benefits as the dairy
-                    herd grows, creating a sustainable cycle for both investors and the business.</p>
-                <a href="./pages/avs-contact.html" class="btn" style="margin-top: 1.5rem;">Start Your Journey Today</a>
+                <p data-translate-key="avs-agreement">AVS provides a 48-month agreement with consistent monthly returns.
+                    The company benefits as the dairy herd grows, creating a sustainable cycle for both investors and
+                    the business.</p>
+                <a href="#contact" class="btn" style="margin-top: 1.5rem;" data-translate-key="start-journey">Start Your
+                    Journey Today</a>
             </div>
         </div>
     </section>
 
-    <!-- Journey Section -->
     <section id="journey" class="journey">
         <div class="container journey-content">
             <div>
                 <div class="section-title" style="text-align: left;">
-                    <h2>My Journey to Success</h2>
+                    <h2 data-translate-key="journey-title">My Journey to Success</h2>
                 </div>
 
                 <div class="journey-steps">
                     <div class="journey-step">
-                        <h3>Struggling Beginning</h3>
-                        <p>Working a 9am-8pm job earning just ₹50,000/month with no growth opportunities</p>
+                        <h3 data-translate-key="journey-step1-h3">Struggling Beginning</h3>
+                        <p data-translate-key="journey-step1-p">Working a 9am-8pm job earning just ₹50,000/month with no
+                            growth opportunities</p>
                     </div>
 
                     <div class="journey-step">
-                        <h3>Discovering AVS</h3>
-                        <p>Learned about AVS Group's business model and investment opportunities in 2020</p>
+                        <h3 data-translate-key="journey-step2-h3">Discovering AVS</h3>
+                        <p data-translate-key="journey-step2-p">Learned about AVS Group's business model and investment
+                            opportunities in 2020</p>
                     </div>
 
                     <div class="journey-step">
-                        <h3>Initial Investment</h3>
-                        <p>Started with a modest investment while continuing my regular job</p>
+                        <h3 data-translate-key="journey-step3-h3">Initial Investment</h3>
+                        <p data-translate-key="journey-step3-p">Started with a modest investment while continuing my
+                            regular job</p>
                     </div>
 
                     <div class="journey-step">
-                        <h3>Building Network</h3>
-                        <p>Used my persuasive skills to build a team of 50 people in the first year</p>
+                        <h3 data-translate-key="journey-step4-h3">Building Network</h3>
+                        <p data-translate-key="journey-step4-p">Used my persuasive skills to build a team of 50 people
+                            in the first year</p>
                     </div>
 
                     <div class="journey-step">
-                        <h3>Exponential Growth</h3>
-                        <p>My network grew to 500+ people by year 2, allowing me to quit my job</p>
+                        <h3 data-translate-key="journey-step5-h3">Exponential Growth</h3>
+                        <p data-translate-key="journey-step5-p">My network grew to 500+ people by year 2, allowing me to
+                            quit my job</p>
                     </div>
 
                     <div class="journey-step">
-                        <h3>Leadership Position</h3>
-                        <p>Reached 5,000+ network members and earning ₹12-15 lakhs monthly</p>
+                        <h3 data-translate-key="journey-step6-h3">Leadership Position</h3>
+                        <p data-translate-key="journey-step6-p">Reached 5,000+ network members and earning ₹12-15 lakhs
+                            monthly</p>
                     </div>
                 </div>
             </div>
@@ -219,13 +214,18 @@
 
                 <div
                     style="background: var(--light); padding: 2rem; border-radius: var(--border-radius); margin-top: 2rem; box-shadow: var(--shadow);">
-                    <h3 style="color: var(--primary); margin-bottom: 1rem;">Why Join My Team?</h3>
+                    <h3 style="color: var(--primary); margin-bottom: 1rem;" data-translate-key="why-join-h3">Why Join My
+                        Team?</h3>
                     <ul style="padding-left: 1.5rem;">
-                        <li style="margin-bottom: 0.8rem;">Personal mentorship from me</li>
-                        <li style="margin-bottom: 0.8rem;">Proven strategies to build your network</li>
-                        <li style="margin-bottom: 0.8rem;">Weekly training sessions</li>
-                        <li style="margin-bottom: 0.8rem;">Marketing materials and support</li>
-                        <li>Monthly Team Tour</li>
+                        <li style="margin-bottom: 0.8rem;" data-translate-key="why-join-li1">Personal mentorship from me
+                        </li>
+                        <li style="margin-bottom: 0.8rem;" data-translate-key="why-join-li2">Proven strategies to build
+                            your network</li>
+                        <li style="margin-bottom: 0.8rem;" data-translate-key="why-join-li3">Weekly training sessions
+                        </li>
+                        <li style="margin-bottom: 0.8rem;" data-translate-key="why-join-li4">Marketing materials and
+                            support</li>
+                        <li data-translate-key="why-join-li5">Monthly Team Tour</li>
                     </ul>
                 </div>
             </div>
@@ -234,54 +234,50 @@
 
 
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-col">
-                <h3>Tika Thapa</h3>
-                <p>Strategic Investor & Top Network Leader at AVS Group of Companies. Empowering others to achieve
-                    financial freedom through smart investments.</p>
+                <h3 data-translate-key="footer-h3-1">Tika Thhapa </h3>
+                <p data-translate-key="footer-p-1">Strategic Investor & Top Network Leader at AVS Group of Companies.
+                    Empowering others to achieve financial freedom through smart investments.</p>
                 <div class="social-links">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
-                    <a href="#"><i class="fab fa-whatsapp"></i></a>
+                    <a href="https://www.facebook.com/share/1LwXRmEtk5/"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tikathhapa3333?igsh=ZnZvbmZ3dHV3YXp0"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/9517173555"><i class="fab fa-whatsapp"></i></a>
+                    
                 </div>
             </div>
 
             <div class="footer-col">
-                <h3>Quick Links</h3>
+                <h3 data-translate-key="footer-h3-2">Quick Links</h3>
                 <ul class="footer-links">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./pages/avs-model.html">AVS Model</a></li>
-                    <li><a href="./pages/avs-portfolio.html">Portfolio</a></li>
-                    <li><a href="./pages/avs-contact.html">Contact</a></li>
+                    <li><a href="#home" data-translate-key="home">Home</a></li>
+                    <li><a href="./pages/avs-model.html" data-translate-key="avs-model">AVS Model</a></li>
+                    <li><a href="./pages/avs-portfolio.html" data-translate-key="portfolio">Portfolio</a></li>
+                    <li><a href="./pages/avs-contact.html" data-translate-key="contact">Contact</a></li>
                 </ul>
             </div>
 
             <div class="footer-col">
-                <h3>AVS Group Companies</h3>
+                <h3 data-translate-key="footer-h3-3">AVS Group Companies</h3>
                 <ul class="footer-links">
-                    <li><a href="#">AVS Dairy</a></li>
-                    <li><a href="#">AVS Flour Mills</a></li>
-                    <li><a href="#">AVS Restaurants</a></li>
-                    <li><a href="#">AVS Properties</a></li>
-                    <li><a href="#">AVS Resorts</a></li>
+                    <li><a href="#" data-translate-key="avs-dairy">AVS Dairy</a></li>
+                    <li><a href="#" data-translate-key="avs-flour">AVS Flour Mills</a></li>
+                    <li><a href="#" data-translate-key="avs-restaurants">AVS Restaurants</a></li>
+                    <li><a href="#" data-translate-key="avs-properties">AVS Properties</a></li>
+                    <li><a href="#" data-translate-key="avs-resorts">AVS Resorts</a></li>
                 </ul>
             </div>
         </div>
 
         <div class="copyright">
-            <p>&copy; 2025 Tika Thapa - AVS Group Leader. All Rights Reserved.</p>
-            <p style="margin-top: 0.5rem; font-size: 0.8rem;">AVS Dairy Projects Limited | Registered Office: Fatehpur
-                Beri, Delhi</p>
+            <p data-translate-key="copyright">&copy; 2025 TikkaThapa - AVS Group Leader. All Rights Reserved.</p>
+            <p style="margin-top: 0.5rem; font-size: 0.8rem;" data-translate-key="footer-address">AVS Dairy Projects
+                Limited | Registered Office: Fatehpur Beri, Delhi</p>
         </div>
     </footer>
 
-    <script src="./js/avs-index.js"></script>
+  <script src="./js/avs-index.js"></script>
 </body>
 
 </html>
-
-
