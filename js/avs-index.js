@@ -1,225 +1,157 @@
 
-const hamburger = document.querySelector('.hamburger');
-const navLinks = document.querySelector('.nav-links');
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburger = document.querySelector('.hamburger');
+  const navLinks = document.querySelector('.nav-links');
+  const themeToggleBtn = document.getElementById('theme-toggle');
+  const body = document.body;
+  const langEnBtn = document.getElementById('lang-en');
+  const langHiBtn = document.getElementById('lang-hi');
 
-hamburger.addEventListener('click', () => {
-  navLinks.classList.toggle('active');
-});
+  // Translation dictionary
+  const translations = {
+    'en': {
+      'home': 'Home',
+      'avs-model': 'AVS Model',
+      'portfolio': 'Portfolio',
+      'contact': 'Contact',
+      'name': 'Tika Thhapa ',
+      'hero-title': 'Investor at AVS Group',
+      'hero-p1': 'I have invested in AVS Group of Companies and achieved financial independence. Now I\'m financially free and earning well.',
+      'stat1': 'Financially Independent',
+      'stat2': 'Years Investing',
+      'discover-avs': 'Discover AVS Investments',
+      'join-team': 'Contact Me',
+      'about-title': 'About Me',
+      'about-h3': 'From Employee to Financially Free Investor',
+      'about-p1': 'I am Tika Thhapa , an investor in AVS Group of Companies. My investment journey has given me financial freedom and the ability to do whatever I want in life.',
+      'about-p2': 'After investing in AVS Group, I achieved complete financial independence. Now I\'m earning well and living life on my own terms.',
+      'about-p3': 'This portfolio contains all the details about my investment journey with AVS Group. You can explore how I achieved financial freedom through smart investments.',
+      'about-p4': 'AVS Group is one of the best investment companies where you can invest your money and earn good returns. If you want to know how you can also achieve financial freedom through AVS investments, feel free to contact me directly.',
+      'about-p5': 'You can read more about my investment journey and AVS Group on this website. I\'m happy to share my experience and help others achieve similar success.',
+      'view-portfolio': 'View My Portfolio',
+      'contact-me': 'Contact Me Directly',
+      'footer-h3-1': 'Tika Thhapa ',
+      'footer-p-1': 'Investor at AVS Group of Companies. Achieved financial freedom through strategic investments and now helping others do the same.',
+      'footer-h3-2': 'Quick Links',
+      'footer-h3-3': 'AVS Group Companies',
+      'avs-dairy': 'AVS Dairy',
+      'avs-flour': 'AVS Flour Mills',
+      'avs-restaurants': 'AVS Restaurants',
+      'avs-properties': 'AVS Properties',
+      'avs-resorts': 'AVS Resorts',
+      'copyright': '© 2025 Tika Thhapa  - AVS Group Investor. All Rights Reserved.',
+      'footer-address': 'AVS Dairy Projects Limited | Visit My Office : H. Office : Plot NO. 9/1 Mustil No.4, Dera Village Near Asthal Mandir New Delhi - 110074'
+    },
+    'hi': {
+      'home': 'होम',
+      'avs-model': 'AVS मॉडल',
+      'portfolio': 'पोर्टफोलियो',
+      'contact': 'संपर्क',
+      'name': 'टीका थापा',
+      'hero-title': 'AVS ग्रुप में निवेशक',
+      'hero-p1': 'मैंने AVS ग्रुप ऑफ कंपनीज़ में निवेश किया है और वित्तीय स्वतंत्रता प्राप्त की है। अब मैं वित्तीय रूप से स्वतंत्र हूं और अच्छी कमाई कर रहा हूं।',
+      'stat1': 'वित्तीय रूप से स्वतंत्र',
+      'stat2': 'वर्षों से निवेश',
+      'discover-avs': 'AVS निवेश खोजें',
+      'join-team': 'मुझसे संपर्क करें',
+      'about-title': 'मेरे बारे में',
+      'about-h3': 'कर्मचारी से वित्तीय रूप से स्वतंत्र निवेशक तक',
+      'about-p1': 'मैं टीका थापा हूं, AVS ग्रुप ऑफ कंपनीज़ में एक निवेशक। मेरे निवेश यात्रा ने मुझे वित्तीय स्वतंत्रता दी है और जीवन में जो चाहे करने की क्षमता दी है।',
+      'about-p2': 'AVS ग्रुप में निवेश करने के बाद, मैंने पूरी वित्तीय स्वतंत्रता प्राप्त की। अब मैं अच्छी कमाई कर रहा हूं और अपनी शर्तों पर जीवन जी रहा हूं।',
+      'about-p3': 'इस पोर्टफोलियो में AVS ग्रुप के साथ मेरी निवेश यात्रा के सभी विवरण शामिल हैं। आप जान सकते हैं कि मैंने स्मार्ट निवेश के through वित्तीय स्वतंत्रता कैसे प्राप्त की।',
+      'about-p4': 'AVS ग्रुप सबसे अच्छी निवेश कंपनियों में से एक है जहां आप अपना पैसा निवेश कर सकते हैं और अच्छा रिटर्न कमा सकते हैं। यदि आप जानना चाहते हैं कि आप AVS निवेश के through वित्तीय स्वतंत्रता कैसे प्राप्त कर सकते हैं, तो बेझिझक मुझसे सीधे संपर्क करें।',
+      'about-p5': 'आप इस वेबसाइट पर मेरी निवेश यात्रा और AVS ग्रुप के बारे में और पढ़ सकते हैं। मैं अपना अनुभव साझा करके और दूसरों को समान सफलता प्राप्त करने में मदद करके खुश हूं।',
+      'view-portfolio': 'मेरा पोर्टफोलियो देखें',
+      'contact-me': 'सीधे संपर्क करें',
+      'footer-h3-1': 'टीका थापा',
+      'footer-p-1': 'AVS ग्रुप ऑफ कंपनीज़ में निवेशक। रणनीतिक निवेश के through वित्तीय स्वतंत्रता प्राप्त की और अब दूसरों की मदद कर रहे हैं।',
+      'footer-h3-2': 'त्वरित लिंक',
+      'footer-h3-3': 'AVS ग्रुप कंपनियां',
+      'avs-dairy': 'AVS डेयरी',
+      'avs-flour': 'AVS आटा मिल्स',
+      'avs-restaurants': 'AVS रेस्तरां',
+      'avs-properties': 'AVS प्रॉपर्टीज',
+      'avs-resorts': 'AVS रिसॉर्ट्स',
+      'copyright': '© 2025 Tika Thhapa  - AVS ग्रुप निवेशक। सर्वाधिकार सुरक्षित।',
+      'footer-address': 'AVS Dairy Projects Limited | Visit My  Office: H. Office : Plot NO. 9/1 Mustil No.4, Dera Village Near Asthal Mandir New Delhi - 110074'
+    }
+  };
 
-document.querySelectorAll('.nav-links a').forEach(link => {
-  link.addEventListener('click', () => {
-    navLinks.classList.remove('active');
-  });
-});
+  // Set language function
+  function setLanguage(lang) {
+    document.querySelectorAll('[data-translate-key]').forEach(element => {
+      const key = element.getAttribute('data-translate-key');
+      if (translations[lang][key]) {
+        element.textContent = translations[lang][key];
+      }
+    });
 
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function (e) {
-    e.preventDefault();
-    document.querySelector(this.getAttribute('href')).scrollIntoView({
-      behavior: 'smooth'
+    // Update active button state
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+      btn.classList.remove('active');
+    });
+    document.getElementById(`lang-${lang}`).classList.add('active');
+
+    // Store language preference
+    localStorage.setItem('preferred-language', lang);
+  }
+
+  // Language switcher event listeners
+  langEnBtn.addEventListener('click', () => setLanguage('en'));
+  langHiBtn.addEventListener('click', () => setLanguage('hi'));
+
+  // Check for saved language preference or default to English
+  const preferredLanguage = localStorage.getItem('preferred-language') || 'en';
+  setLanguage(preferredLanguage);
+
+  // Hamburger menu toggle
+  if (hamburger) {
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  }
+
+  // Close mobile menu on link click
+  document.querySelectorAll('.nav-links a').forEach(link => {
+    link.addEventListener('click', () => {
+      navLinks.classList.remove('active');
     });
   });
-});
 
-// Language Translation Feature
-const translations = {
-  en: {
-    "home": "Home",
-    "avs-model": "AVS Model",
-    "portfolio": "Portfolio",
-    "contact": "Contact",
-    "name": "Tika Thhapa",
-    "hero-title": "Strategic Investor & Network Leader",
-    "hero-p1": "My journey is one of strategic investment, driven by a passion for building connections and creating opportunities.",
-    "stat1": "Network Members",
-    "stat2": "Monthly Income",
-    "discover-avs": "Discover AVS Model",
-    "join-team": "Join My Team",
-    "about-title": "About Me",
-    "about-h3": "From Employee to Empowered Leader – My Journey",
-    "about-p1": "I am Tika Thhapa, and my story is about turning challenges into opportunities through passion, persistence, and the right network.",
-    "about-p2": "My journey began with a demanding 9-to-8 job, but I always knew there was something greater waiting for me. Through dedication and a powerful system, I discovered a path that not only gave me freedom, but also allowed me to inspire and build a thriving community.",
-    "about-p3": "Today, I’m proud to share that transformation with others. My success isn’t just about personal growth—it’s about empowering people around me to dream bigger and achieve more. I believe in connections, teamwork, and the strength of a united vision.",
-    "about-p4": "If you want to know how I did it and be part of a journey that can change your life too, <strong>join my team and let’s grow together!</strong>",
-    "avs-title": "About AVS Group of Companies",
-    "step1-h3": "Membership",
-    "step1-p": "Become a member by purchasing any AVS product with a ₹1,200 membership fee. ",
-    "step2-h3": "Investment",
-    "step2-p": "Invest any amount (e.g. ₹1,00,000). The company uses this to purchase dairy animals and infrastructure.",
-    "step3-h3": "3% Monthly Return",
-    "step3-p": "Receive 3% monthly return on your investment (₹3,000/month on ₹1,00,000 investment).",
-    "income-opportunities": "Income Opportunities",
-    "income-h4-1": "Direct Income",
-    "income-p-1": "Earn commissions for bringing new investors to AVS Dairy",
-    "income-h4-2": "Level Income",
-    "income-p-2": "Earn from multiple levels in your network structure",
-    "income-h4-3": "Matching Income",
-    "income-p-3": "Receive bonuses based on your team's performance",
-    "income-h4-4": "Leadership Bonus",
-    "income-p-4": "Additional rewards for top performers and leaders",
-    "avs-agreement": "AVS provides a 48-month agreement with consistent monthly returns. The company benefits as the dairy herd grows, creating a sustainable cycle for both investors and the business.",
-    "start-journey": "Start Your Journey Today",
-    "journey-title": "My Journey to Success",
-    "journey-step1-h3": "Struggling Beginning",
-    "journey-step1-p": "Working a 9am-8pm job earning just ₹50,000/month with no growth opportunities",
-    "journey-step2-h3": "Discovering AVS",
-    "journey-step2-p": "Learned about AVS Group's business model and investment opportunities in 2020",
-    "journey-step3-h3": "Initial Investment",
-    "journey-step3-p": "Started with a modest investment while continuing my regular job",
-    "journey-step4-h3": "Building Network",
-    "journey-step4-p": "Used my persuasive skills to build a team of 50 people in the first year",
-    "journey-step5-h3": "Exponential Growth",
-    "journey-step5-p": "My network grew to 500+ people by year 2, allowing me to quit my job",
-    "journey-step6-h3": "Leadership Position",
-    "journey-step6-p": "Reached 6,000+ network members and earning a consistent, high-level income that gave me complete freedom ",
-    "why-join-h3": "Why Join My Team?",
-    "why-join-li1": "Personal mentorship from me",
-    "why-join-li2": "Proven strategies to build your network",
-    "why-join-li3": "Weekly training sessions",
-    "why-join-li4": "Marketing materials and support",
-    "why-join-li5": "Monthly Team Tour",
-    "contact-title": "Get In Touch",
-    "contact-h4-1": "Location",
-    "contact-p-1": "Delhi, India",
-    "contact-h4-2": "Phone",
-    "contact-p-2": "+91 9517173555",
-    "contact-h4-3": "Email",
-    "contact-p-3": "avsdairy786@gmail.com",
-    "contact-form-h3": "Send a Message",
-    "form-label-name": "Full Name",
-    "form-placeholder-name": "Your Name",
-    "form-label-email": "Email Address",
-    "form-placeholder-email": "Your Email",
-    "form-label-phone": "Phone Number",
-    "form-placeholder-phone": "Your Phone",
-    "form-label-message": "Your Message",
-    "form-placeholder-message": "How can I help you?",
-    "send-message": "Send Message",
-    "footer-h3-1": "Tika Thhapa",
-    "footer-p-1": "Strategic Investor & Top Network Leader at AVS Group of Companies. Empowering others to achieve financial freedom through smart investments.",
-    "footer-h3-2": "Quick Links",
-    "footer-h3-3": "AVS Group Companies",
-    "avs-dairy": "AVS Dairy",
-    "avs-flour": "AVS Flour Mills",
-    "avs-restaurants": "AVS Restaurants",
-    "avs-properties": "AVS Properties",
-    "avs-resorts": "AVS Resorts",
-    "copyright": "© 2025 TikkaThapa - AVS Group Leader. All Rights Reserved.",
-    "footer-address": "AVS Dairy Projects Limited | Registered Office: Fatehpur Beri, Delhi"
-  },
-  hi: {
-    "home": "होम",
-    "avs-model": "एवीएस मॉडल",
-    "portfolio": "पोर्टफोलियो",
-    "contact": "संपर्क करें",
-    "name": "टीका थापा",
-    "hero-title": "रणनीतिक निवेशक और नेटवर्क लीडर",
-    "hero-p1": "मेरा सफर रणनीतिक निवेश का है, जो संबंध बनाने और अवसर पैदा करने के जुनून से प्रेरित है।",
-    "stat1": "नेटवर्क सदस्य",
-    "stat2": "मासिक आय",
-    "discover-avs": "एवीएस मॉडल जानें",
-    "join-team": "मेरी टीम में शामिल हों",
-    "about-title": "मेरे बारे में",
-    "about-h3": "“नौकरी से लेकर लीडर बनने तक – मेरी कहानी”",
-    "about-p1": "मैं टीका थापा हूँ, और मेरी कहानी जुनून, लगन और सही नेटवर्क के माध्यम से चुनौतियों को अवसरों में बदलने के बारे में है।",
-    "about-p2": "मेरी यात्रा एक मांग वाली 9-से-8 की नौकरी से शुरू हुई थी, लेकिन मैं हमेशा जानता था कि मेरे लिए कुछ और बड़ा इंतजार कर रहा है। समर्पण और एक शक्तिशाली प्रणाली के माध्यम से, मैंने एक ऐसा रास्ता खोजा जिसने न केवल मुझे स्वतंत्रता दी, बल्कि मुझे एक फलता-फूलता समुदाय बनाने और प्रेरित करने की अनुमति भी दी।",
-    "about-p3": "आज, मुझे उस बदलाव को दूसरों के साथ साझा करने पर गर्व है। मेरी सफलता केवल व्यक्तिगत विकास के बारे में नहीं है – यह मेरे आस-पास के लोगों को बड़े सपने देखने और अधिक हासिल करने के लिए सशक्त बनाने के बारे में है। मुझे संबंधों, टीम वर्क और एक एकजुट दृष्टि की ताकत में विश्वास है।",
-    "about-p4": "यदि आप जानना चाहते हैं कि मैंने यह कैसे किया और एक ऐसी यात्रा का हिस्सा बनना चाहते हैं जो आपके जीवन को भी बदल सकती है, तो मेरी टीम में शामिल हों और आइए मिलकर आगे बढ़ें! ",
-    "avs-title": "एवीएस ग्रुप ऑफ कंपनीज के बारे में",
-    "step1-h3": "सदस्यता",
-    "step1-p": "₹1,200 की सदस्यता शुल्क के साथ कोई भी एवीएस उत्पाद खरीदकर सदस्य बनें। ",
-    "step2-h3": "निवेश",
-    "step2-p": "कोई भी राशि निवेश करें (उदाहरण के लिए ₹1,00,000)। कंपनी इसका उपयोग दुधारू पशुओं और बुनियादी ढांचे को खरीदने के लिए करती है।",
-    "step3-h3": "3% मासिक रिटर्न",
-    "step3-p": "अपने निवेश पर 3% मासिक रिटर्न प्राप्त करें (₹1,00,000 के निवेश पर ₹3,000/माह)।",
-    "income-opportunities": "आय के अवसर",
-    "income-h4-1": "प्रत्यक्ष आय",
-    "income-p-1": "एवीएस डेयरी में नए निवेशकों को लाने के लिए कमीशन कमाएं",
-    "income-h4-2": "लेवल इनकम",
-    "income-p-2": "अपने नेटवर्क संरचना में कई स्तरों से कमाएं",
-    "income-h4-3": "मैचिंग इनकम",
-    "income-p-3": "अपनी टीम के प्रदर्शन के आधार पर बोनस प्राप्त करें",
-    "income-h4-4": "नेतृत्व बोनस",
-    "income-p-4": "शीर्ष प्रदर्शन करने वालों और नेताओं के लिए अतिरिक्त पुरस्कार",
-    "avs-agreement": "डेयरी व्यवसाय बढ़ने से कंपनी को लाभ होता है, जिससे निवेशकों और व्यवसाय दोनों के लिए एक स्थायी चक्र का निर्माण होता है।",
-    "start-journey": "आज ही अपनी यात्रा शुरू करें",
-    "journey-title": "मेरी सफलता की यात्रा",
-    "journey-step1-h3": "संघर्षपूर्ण शुरुआत",
-    "journey-step1-p": "एक 9am-8pm की नौकरी कर रहा था, जिसमें कोई विकास के अवसर नहीं थे और केवल ₹50,000/माह कमा रहा था",
-    "journey-step2-h3": "एवीएस की खोज",
-    "journey-step2-p": "2020 में एवीएस ग्रुप के व्यवसाय मॉडल और निवेश के अवसरों के बारे में जाना",
-    "journey-step3-h3": "प्रारंभिक निवेश",
-    "journey-step3-p": "अपनी नियमित नौकरी जारी रखते हुए एक मामूली निवेश के साथ शुरुआत की",
-    "journey-step4-h3": "नेटवर्क का निर्माण",
-    "journey-step4-p": "पहले वर्ष में 50 लोगों की टीम बनाने के लिए अपने प्रेरक कौशल का उपयोग किया",
-    "journey-step5-h3": "घातांक वृद्धि",
-    "journey-step5-p": "दूसरे वर्ष तक मेरा नेटवर्क 500+ लोगों तक बढ़ गया, जिससे मुझे अपनी नौकरी छोड़ने की अनुमति मिली",
-    "journey-step6-h3": "नेतृत्व की स्थिति",
-    "journey-step6-p": "6,000 से अधिक नेटवर्क सदस्यों तक पहुंच और एक निरंतर, उच्च-स्तरीय आय अर्जित करना जिससे मुझे पूर्ण स्वतंत्रता मिली",
-    "why-join-h3": "मेरी टीम में क्यों शामिल हों?",
-    "why-join-li1": "मुझसे व्यक्तिगत मार्गदर्शन",
-    "why-join-li2": "अपने नेटवर्क को बनाने के लिए सिद्ध रणनीतियाँ",
-    "why-join-li3": "साप्ताहिक प्रशिक्षण सत्र",
-    "why-join-li4": "विपणन सामग्री और सहायता",
-    "why-join-li5": "मासिक टीम टूर",
-    "contact-title": "संपर्क में रहें",
-    "contact-h4-1": "स्थान",
-    "contact-p-1": "दिल्ली, भारत",
-    "contact-h4-2": "फोन",
-    "contact-p-2": "+91 98765 43210",
-    "contact-h4-3": "ईमेल",
-    "contact-p-3": "tika.thapa@avsgroup.com",
-    "contact-form-h3": "एक संदेश भेजें",
-    "form-label-name": "पूरा नाम",
-    "form-placeholder-name": "आपका नाम",
-    "form-label-email": "ईमेल पता",
-    "form-placeholder-email": "आपका ईमेल",
-    "form-label-phone": "फ़ोन नंबर",
-    "form-placeholder-phone": "आपका फ़ोन",
-    "form-label-message": "आपका संदेश",
-    "form-placeholder-message": "मैं आपकी कैसे मदद कर सकता हूँ?",
-    "send-message": "संदेश भेजें",
-    "footer-h3-1": "टीका थापा",
-    "footer-p-1": "एवीएस ग्रुप ऑफ कंपनीज में रणनीतिक निवेशक और शीर्ष नेटवर्क लीडर। स्मार्ट निवेश के माध्यम से दूसरों को वित्तीय स्वतंत्रता प्राप्त करने के लिए सशक्त बनाना।",
-    "footer-h3-2": "त्वरित लिंक",
-    "footer-h3-3": "एवीएस ग्रुप कंपनियां",
-    "avs-dairy": "एवीएस डेयरी",
-    "avs-flour": "एवीएस आटा मिल्स",
-    "avs-restaurants": "एवीएस रेस्टोरेंट्स",
-    "avs-properties": "एवीएस प्रॉपर्टीज",
-    "avs-resorts": "एवीएस रिसॉर्ट्स",
-    "copyright": "© 2025 टीका थापा - एवीएस ग्रुप लीडर। सर्वाधिकार सुरक्षित।",
-    "footer-address": "एवीएस डेयरी प्रोजेक्ट्स लिमिटेड | पंजीकृत कार्यालय: फतेहपुर बेरी, दिल्ली"
-  }
-};
-
-function setLanguage(lang) {
-  document.documentElement.lang = lang;
-  const elements = document.querySelectorAll('[data-translate-key]');
-  elements.forEach(element => {
-    const key = element.getAttribute('data-translate-key');
-    const targetText = translations[lang][key];
-
-    if (targetText !== undefined) {
-      if (element.tagName === 'INPUT' || element.tagName === 'TEXTAREA') {
-        element.placeholder = targetText;
-      } else {
-        element.textContent = targetText;
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        target.scrollIntoView({
+          behavior: 'smooth'
+        });
       }
-    }
+    });
   });
 
-  // Update active button state
-  document.querySelectorAll('.lang-btn').forEach(btn => btn.classList.remove('active'));
-  document.getElementById('lang-' + lang).classList.add('active');
+  // Dark Mode Toggle
+  if (themeToggleBtn) {
+    // Check for saved theme preference
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+      body.classList.add('dark-mode');
+      themeToggleBtn.querySelector('i').classList.remove('fa-moon');
+      themeToggleBtn.querySelector('i').classList.add('fa-sun');
+    }
 
-  localStorage.setItem('lang', lang);
-}
-
-document.getElementById('lang-en').addEventListener('click', () => setLanguage('en'));
-document.getElementById('lang-hi').addEventListener('click', () => setLanguage('hi'));
-
-document.addEventListener('DOMContentLoaded', () => {
-  const savedLang = localStorage.getItem('lang') || 'en';
-  setLanguage(savedLang);
+    themeToggleBtn.addEventListener('click', () => {
+      body.classList.toggle('dark-mode');
+      if (body.classList.contains('dark-mode')) {
+        themeToggleBtn.querySelector('i').classList.remove('fa-moon');
+        themeToggleBtn.querySelector('i').classList.add('fa-sun');
+        localStorage.setItem('theme', 'dark');
+      } else {
+        themeToggleBtn.querySelector('i').classList.remove('fa-sun');
+        themeToggleBtn.querySelector('i').classList.add('fa-moon');
+        localStorage.setItem('theme', 'light');
+      }
+    });
+  }
 });
