@@ -1,430 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AVS Model - Light Theme</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="../css/avs-model.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tika Thhapa | AVS Model</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap"
+    rel="stylesheet">
+ <link rel="stylesheet" href="../css/avs-model.css">
 </head>
+
 <body>
-    <div class="mobile-overlay" id="mobile-overlay"></div>
-    <div class="mobile-sidebar" id="mobile-sidebar">
-        <div class="sidebar-header">
-            <div class="sidebar-logo">AVS<span>Model</span></div>
-            <button class="close-menu" id="close-menu">
-                <i class="fas fa-times"></i>
-            </button>
+  <header>
+    <div class="container nav-container">
+      <a href="#" class="logo">Tika <span>Thhapa</span></a>
+      <ul class="nav-links">
+        <li><a href="../index.html" data-translate-key="home">Home</a></li>
+        <li><a href="#" class="active" data-translate-key="avs-model">AVS Model</a></li>
+        <li><a href="./avs-portfolio.html" data-translate-key="portfolio">Portfolio</a></li>
+        <li><a href="./avs-contact.html" data-translate-key="contact">Contact</a></li>
+      </ul>
+      <div class="right-nav">
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="lang-en">EN</button>
+          <button class="lang-btn" id="lang-hi">HI</button>
         </div>
-        
-        <ul class="mobile-menu">
-            <li>
-                <a href="../index.html" data-translate-key="homeLink">
-                    <i class="fas fa-home"></i>
-                    <div class="menu-text">
-                        <div class="menu-title">Home</div>
-                        <div class="menu-description">Return to main page</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="./avs-model.html" data-translate-key="companyLink">
-                    <i class="fas fa-address-book"></i>
-                    <div class="menu-text">
-                        <div class="menu-title">AVS Model</div>
-                        <div class="menu-description">Business model details</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="../pages/avs-portfolio.html" data-translate-key="portfolioLink">
-                    <i class="fas fa-briefcase"></i>
-                    <div class="menu-text">
-                        <div class="menu-title">Portfolio</div>
-                        <div class="menu-description">View our work samples</div>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a href="./avs-contact.html" data-translate-key="contactLink">
-                    <i class="fas fa-envelope"></i>
-                    <div class="menu-text">
-                        <div class="menu-title">Contact</div>
-                        <div class="menu-description">Get in touch with us</div>
-                    </div>
-                </a>
-            </li>
+        <button class="mode-toggle" id="mode-toggle">
+          <i class="fas fa-moon"></i>
+        </button>
+        <button class="hamburger">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="model">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h1 data-translate-key="heroTitle">AVS Dairy Business Model</h1>
+          <p data-translate-key="heroDescription">An in-depth look at the AVS Group's operational and investment model,
+            offering insights into their dairy, food, and property ventures.</p>
+
+          <div class="hero-btns">
+            <a href="#joining" class="btn" data-translate-key="investmentBtn">
+              <i class="fas fa-hand-holding-usd"></i> Investment Plan
+            </a>
+            <a href="./avs-contact.html" class="btn btn-outline" data-translate-key="contactBtn">
+              <i class="fas fa-phone"></i> Contact Us
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-portrait-container">
+          <img src="../images/logo-image2.png" alt="AVS Dairy Business Model"
+            class="hero-portrait">
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="company">
+      <div class="container">
+        <h2 class="section-title" data-translate-key="companyProfileTitle">
+          <i class="fas fa-building"></i>
+          Company Profile
+        </h2>
+
+        <p class="section-subtitle" data-translate-key="companyProfileSubtitle">Learn about AVS Group's history,
+          locations, and business verticals</p>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <h3 data-translate-key="detailsTitle"><i class="fas fa-info-circle"></i> Details</h3>
+            <ul>
+              <li><strong><span data-translate-key="companyNameLabel">Company Name:</span></strong> <span
+                  data-translate-key="companyNameValue">AVS (Arthis Versus Dairy Projects Limited)</span></li>
+              <li><strong><span data-translate-key="cmdLabel">CMD:</span></strong> <span
+                  data-translate-key="cmdValue">Shri Rajendra Singh</span></li>
+              <li><strong><span data-translate-key="startDateLabel">Start Date:</span></strong> <span
+                  data-translate-key="startDateValue">October 21, 2020</span></li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
+            <h3 data-translate-key="locationsTitle"><i class="fas fa-map-marker-alt"></i> Locations</h3>
+            <ul>
+              <li><strong><span data-translate-key="headOfficeLabel">Head Office & Plant:</span></strong> <span
+                  data-translate-key="headOfficeValue">Fatehpur Beri, Delhi</span></li>
+              <li><strong><span data-translate-key="farmsLabel">Farms:</span></strong> <span
+                  data-translate-key="farmsValue">Fatehpur Beri (2), Narela (1), Sohna (2), Palwal (1), Faridabad
+                  (1)</span></li>
+              <li><strong><span data-translate-key="restaurantsLabel">Restaurants:</span></strong> <span
+                  data-translate-key="restaurantsValue">Fatehpur Beri, Gurgaon (Gwal Pahari & Dunda Hera), Faridabad,
+                  Kotla Mubarakpur</span></li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
+            <h3 data-translate-key="businessVerticalsTitle"><i class="fas fa-industry"></i> Business Verticals</h3>
+            <ul>
+              <li><strong><span data-translate-key="dairyLabel">Dairy:</span></strong> <span
+                  data-translate-key="dairyValue">3000+ buffaloes, 250+ cows, 30,000+ liters of milk sold daily.</span>
+              </li>
+              <li><strong><span data-translate-key="flourMillsLabel">Flour Mills:</span></strong> <span
+                  data-translate-key="flourMillsValue">Located in Alwar, Rajasthan, producing flour, oil, semolina, and
+                  more.</span></li>
+              <li><strong><span data-translate-key="foodStoresLabel">Food Stores & Restaurants:</span></strong> <span
+                  data-translate-key="foodStoresValue">Multiple locations across Delhi and Gurgaon.</span></li>
+              <li><strong><span data-translate-key="propertiesLabel">Properties:</span></strong> <span
+                  data-translate-key="propertiesValue">Residential properties, villas, and resorts in various
+                  locations.</span></li>
+            </ul>
+          </div>
+
+          <div class="feature-box">
+            <h3 data-translate-key="downloadTitle"><i class="fas fa-file-download"></i> Download Brochure</h3>
+            <p data-translate-key="downloadDescription">You can download the full company profile for more details.</p>
+            <a href="#" download class="btn" data-translate-key="downloadButton">
+              <i class="fas fa-download"></i> Download PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="joining">
+      <div class="container">
+        <h2 class="section-title" data-translate-key="investmentTitle">
+          <i class="fas fa-chart-line"></i>
+          Investment & Returns Model
+        </h2>
+
+        <p class="section-subtitle" data-translate-key="investmentSubtitle">Discover how you can invest in AVS Dairy and
+          the returns you can expect</p>
+
+        <div class="investment-highlight">
+          <p data-translate-key="joiningParagraph1">To join AVS Dairy, a one-time membership fee of ₹1,200 is required,
+            which can be used to purchase products or dine at their restaurants. After joining, members receive a unique
+            ID and password.</p>
+        </div>
+
+        <div class="feature-box">
+          <h3 data-translate-key="agreementTitle">
+            <i class="fas fa-file-contract"></i>
+            The 48-Month Agreement
+          </h3>
+          <p data-translate-key="agreementParagraph">For an investment of ₹1,00,000, the company offers a 48-month
+            agreement, providing a 3% monthly return. This means an investor receives ₹3,000 every month for four years,
+            totaling ₹1,44,000 in returns. At the end of the agreement, the original investment of ₹1,00,000 is also
+            returned.</p>
+
+          <div class="stat-grid">
+            <div class="stat-box">
+              <div class="stat-value">₹1,00,000</div>
+              <div class="stat-label" data-translate-key="investmentLabel">Investment</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">48 * 3000</div>
+              <div class="stat-label" data-translate-key="monthsLabel">Months</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-value">₹1,44,000</div>
+              <div class="stat-label" data-translate-key="returnsLabel">Returns</div>
+            </div>
+          </div>
+
+          <div style="text-align: center; margin-top: 2rem;">
+            <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary);" data-translate-key="totalValue">
+              Total Value: ₹2,44,000</div>
+            <div style="color: var(--gray); margin-top: 0.5rem;" data-translate-key="totalDescription">(₹1,00,000
+              investment + ₹1,44,000 returns)</div>
+          </div>
+        </div>
+
+        <div class="feature-box" style="margin-top: 2rem;">
+          <h3 data-translate-key="returnMethodTitle">
+            <i class="fas fa-calculator"></i>
+            How the 3% Return is Generated
+          </h3>
+          <p data-translate-key="returnMethodParagraph1">The company uses the ₹1,00,000 investment to purchase a buffalo
+            and a calf. The buffalo produces approximately 10 liters of milk daily. The member has two options:</p>
+
+          <div class="feature-grid">
+            <div class="feature-box">
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <i class="fas fa-wine-bottle" style="font-size: 2rem; color: var(--primary); margin-right: 1rem;"></i>
+                <h4 data-translate-key="option1">Receive 1.5 liters of milk daily</h4>
+              </div>
+              <p data-translate-key="option1Desc">Fresh milk delivered to your doorstep daily</p>
+            </div>
+
+            <div class="feature-box">
+              <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+                <i class="fas fa-rupee-sign" style="font-size: 2rem; color: var(--primary); margin-right: 1rem;"></i>
+                <h4 data-translate-key="option2">Receive ₹3,000 per month</h4>
+              </div>
+              <p data-translate-key="option2Desc">Equivalent to the value of the milk (1.5 liters x 30 days)</p>
+            </div>
+          </div>
+
+          <p data-translate-key="returnMethodParagraph2" style="margin-top: 1.5rem;">The remaining 8.5 liters of milk is
+            sold or used in the company's restaurants, which is how the company generates its profit.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="withdrawal">
+      <div class="container">
+        <h2 class="section-title" data-translate-key="withdrawalPolicyTitle">
+          <i class="fas fa-money-bill-transfer"></i>
+          Withdrawal Policy
+        </h2>
+
+        <p class="section-subtitle" data-translate-key="withdrawalSubtitle">Understand the terms for withdrawing your
+          investment</p>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+              <i class="fas fa-exclamation-triangle" style="font-size: 2rem; color: #e74c3c; margin-right: 1rem;"></i>
+              <h4 data-translate-key="earlyWithdrawal">Early Withdrawal</h4>
+            </div>
+            <p data-translate-key="earlyWithdrawalDesc">10% deduction if withdrawn before 24 months</p>
+          </div>
+
+          <div class="feature-box">
+            <div style="display: flex; align-items: center; margin-bottom: 1rem;">
+              <i class="fas fa-check-circle" style="font-size: 2rem; color: var(--success); margin-right: 1rem;"></i>
+              <h4 data-translate-key="fullWithdrawal">Full Withdrawal</h4>
+            </div>
+            <p data-translate-key="fullWithdrawalDesc">No deductions after completing 24 months</p>
+          </div>
+        </div>
+
+        <div class="feature-box" style="margin-top: 2rem;">
+          <ul>
+            <li data-translate-key="withdrawalPolicy1">If a member wishes to withdraw their investment before 24 months,
+              a 10% deduction will be made from the total amount.</li>
+            <li data-translate-key="withdrawalPolicy2">After completing 24 months, the full investment can be withdrawn
+              without any deductions.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="requirements">
+      <div class="container">
+        <h2 class="section-title" data-translate-key="requirementsTitle">
+          <i class="fas fa-file-alt"></i>
+          Required Documents
+        </h2>
+
+        <p class="section-subtitle" data-translate-key="requirementsSubtitle">Documents needed to become an AVS Dairy
+          member</p>
+
+        <div class="feature-grid">
+          <div class="feature-box">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fas fa-id-card"
+                style="font-size: 1.5rem; color: var(--primary); margin-right: 1rem; margin-top: 0.3rem;"></i>
+              <div>
+                <h4 data-translate-key="doc1">Aadhaar Card</h4>
+                <p data-translate-key="doc1Desc">Government ID proof</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fas fa-id-card"
+                style="font-size: 1.5rem; color: var(--primary); margin-right: 1rem; margin-top: 0.3rem;"></i>
+              <div>
+                <h4 data-translate-key="doc2">PAN Card</h4>
+                <p data-translate-key="doc2Desc">Tax identification card</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fas fa-university"
+                style="font-size: 1.5rem; color: var(--primary); margin-right: 1rem; margin-top: 0.3rem;"></i>
+              <div>
+                <h4 data-translate-key="doc3">Bank Details</h4>
+                <p data-translate-key="doc3Desc">Bank Name, Account Number, IFSC Code</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fas fa-mobile-alt"
+                style="font-size: 1.5rem; color: var(--primary); margin-right: 1rem; margin-top: 0.3rem;"></i>
+              <div>
+                <h4 data-translate-key="doc4">Bank-linked Mobile Number</h4>
+                <p data-translate-key="doc4Desc">For verification purposes</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <div style="display: flex; align-items: flex-start;">
+              <i class="fas fa-user-friends"
+                style="font-size: 1.5rem; color: var(--primary); margin-right: 1rem; margin-top: 0.3rem;"></i>
+              <div>
+                <h4 data-translate-key="doc5">Nominee Details</h4>
+                <p data-translate-key="doc5Desc">Name, Age of nominee</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-col">
+        <h3 data-translate-key="footer-h3-1">Tika Thhapa </h3>
+        <p data-translate-key="footer-p-1">Strategic Investor & Top Network Leader at AVS Group of Companies.
+          Empowering others to achieve financial freedom through smart investments.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/share/1LwXRmEtk5/"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/tikathhapa3333?igsh=ZnZvbmZ3dHV3YXp0"><i class="fab fa-instagram"></i></a>
+          <a href="https://wa.me/9517173555"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-translate-key="footer-h3-2">Quick Links</h3>
+        <ul class="footer-links">
+          <li><a href="../index.html" data-translate-key="home">Home</a></li>
+          <li><a href="#" data-translate-key="avs-model">AVS Model</a></li>
+          <li><a href="./avs-portfolio.html" data-translate-key="portfolio">Portfolio</a></li>
+          <li><a href="./avs-contact.html" data-translate-key="contact">Contact</a></li>
         </ul>
-        
-        <div class="sidebar-footer">
-            <p>Connect with AVS</p>
-            <div style="display: flex; justify-content: center; gap: 15px; margin-top: 10px;">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
-        </div>
+      </div>
+
+      <div class="footer-col">
+        <h3 data-translate-key="footer-h3-3">AVS Group Companies</h3>
+        <ul class="footer-links">
+          <li><a href="#" data-translate-key="avs-dairy">AVS Dairy</a></li>
+          <li><a href="#" data-translate-key="avs-flour">AVS Flour Mills</a></li>
+          <li><a href="#" data-translate-key="avs-restaurants">AVS Restaurants</a></li>
+          <li><a href="#" data-translate-key="avs-properties">AVS Properties</a></li>
+          <li><a href="#" data-translate-key="avs-resorts">AVS Resorts</a></li>
+        </ul>
+      </div>
     </div>
 
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src="../images/logo-image2.png" alt="AVS Logo" class="mr-2 rounded-full">
-                AVS<span style="color: #1e88e5;">Model</span>
-            </div>
-            
-            <button class="hamburger" id="hamburger-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </button>
-            
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="../index.html" class="flex items-center" data-translate-key="homeLink">
-                     Home
-                    </a></li>
-                    <li><a href="./avs-model.html" class="flex items-center" data-translate-key="companyLink">
-                       AVS Model
-                    </a></li>
-                    <li><a href="../pages/avs-portfolio.html" class="flex items-center" data-translate-key="portfolioLink">
-                        Portfolio
-                    </a></li>
-                    <li><a href="./avs-contact.html" class="flex items-center" data-translate-key="contactLink">
-                        Contact
-                    </a></li>
-                </ul>
-            </nav>
-            
-            <div class="language-switcher">
-                <button id="lang-en" class="flex items-center">
-                    <i class="fas fa-globe mr-2"></i>ENGLISH
-                </button>
-                <button id="lang-hi" class="flex items-center">
-                    <i class="fas fa-globe mr-2"></i>HINDI
-                </button>
-            </div>
-        </header>
-
-        <section class="hero" id="model">
-            <div class="icon-box">
-                <i class="fas fa-cow"></i>
-            </div>
-            <h1 data-translate-key="heroTitle">AVS Dairy Business Model</h1>
-            <p data-translate-key="heroDescription">An in-depth look at the AVS Group's operational and investment model, offering insights into their dairy, food, and property ventures.</p>
-            <div class="mt-6">
-                <a href="#joining"
-                    class="btn flex items-center w-fit mx-auto" data-translate-key="investmentBtn">
-                    <i class="fas fa-hand-holding-usd mr-2"></i>
-                    Investment Plan
-                </a>
-            </div>
-        </section>
-
-        <section class="section" id="company">
-            <h2 class="section-title" data-translate-key="companyProfileTitle">
-                <i class="fas fa-building"></i>
-                Company Profile
-            </h2>
-
-            <div class="section-content">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div class="feature-box">
-                        <h3 data-translate-key="detailsTitle"><i class="fas fa-info-circle"></i> Details</h3>
-                        <ul class="list-disc">
-                            <li><strong><span data-translate-key="companyNameLabel">Company Name:</span></strong> <span data-translate-key="companyNameValue">AVS (Arthis Versus Dairy Projects Limited)</span></li>
-                            <li><strong><span data-translate-key="cmdLabel">CMD:</span></strong> <span data-translate-key="cmdValue">Shri Rajendra Singh</span></li>
-                            <li><strong><span data-translate-key="startDateLabel">Start Date:</span></strong> <span data-translate-key="startDateValue">October 21, 2020</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-box">
-                        <h3 data-translate-key="locationsTitle"><i class="fas fa-map-marker-alt"></i> Locations</h3>
-                        <ul class="list-disc">
-                            <li><strong><span data-translate-key="headOfficeLabel">Head Office & Plant:</span></strong> <span data-translate-key="headOfficeValue">Fatehpur Beri, Delhi</span></li>
-                            <li><strong><span data-translate-key="farmsLabel">Farms:</span></strong> <span data-translate-key="farmsValue">Fatehpur Beri (2), Narela (1), Sohna (2), Palwal (1), Faridabad (1)</span></li>
-                            <li><strong><span data-translate-key="restaurantsLabel">Restaurants:</span></strong> <span data-translate-key="restaurantsValue">Fatehpur Beri, Gurgaon (Gwal Pahari & Dunda Hera), Faridabad, Kotla Mubarakpur</span></li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="grid md:grid-cols-2 gap-8 mt-6">
-                    <div class="feature-box">
-                        <h3 data-translate-key="businessVerticalsTitle"><i class="fas fa-industry"></i> Business Verticals</h3>
-                        <ul class="list-disc">
-                            <li><strong><span data-translate-key="dairyLabel">Dairy:</span></strong> <span data-translate-key="dairyValue">3000+ buffaloes, 250+ cows, 30,000+ liters of milk sold daily.</span></li>
-                            <li><strong><span data-translate-key="flourMillsLabel">Flour Mills:</span></strong> <span data-translate-key="flourMillsValue">Located in Alwar, Rajasthan, producing flour, oil, semolina, and more.</span></li>
-                            <li><strong><span data-translate-key="foodStoresLabel">Food Stores & Restaurants:</span></strong> <span data-translate-key="foodStoresValue">Multiple locations across Delhi and Gurgaon.</span></li>
-                            <li><strong><span data-translate-key="propertiesLabel">Properties:</span></strong> <span data-translate-key="propertiesValue">Residential properties, villas, and resorts in various locations.</span></li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-box">
-                        <h3 data-translate-key="downloadTitle"><i class="fas fa-file-download"></i> Download Brochure</h3>
-                        <p class="mb-4" data-translate-key="downloadDescription">You can download the full company profile for more details.</p>
-                        <a href="#" download
-                            class="btn flex items-center w-fit" data-translate-key="downloadButton">
-                            <i class="fas fa-download mr-2"></i>
-                            Download PDF
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="joining">
-            <h2 class="section-title" data-translate-key="investmentTitle">
-                <i class="fas fa-chart-line"></i>
-                Investment & Returns Model
-            </h2>
-
-            <div class="section-content">
-                <div class="investment-highlight">
-                    <p data-translate-key="joiningParagraph1">To join AVS Dairy, a one-time membership fee of ₹1,200 is required, which can be used to purchase products or dine at their restaurants. After joining, members receive a unique ID and password.</p>
-                </div>
-
-                <div class="mt-8">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center" data-translate-key="agreementTitle">
-                        <i class="fas fa-file-contract mr-2" style="color: #1e88e5;"></i>
-                        The 48-Month Agreement
-                    </h3>
-                    <p data-translate-key="agreementParagraph">For an investment of ₹1,00,000, the company offers a 48-month agreement, providing a 3% monthly return. This means an investor receives ₹3,000 every month for four years, totaling ₹1,44,000 in returns. At the end of the agreement, the original investment of ₹1,00,000 is also returned.</p>
-
-                    <div class="flex justify-center my-8">
-                        <div class="bg-white p-6 rounded-xl max-w-2xl w-full shadow-md">
-                            <div class="grid grid-cols-3 gap-4 text-center">
-                                <div class="stat-box">
-                                    <div class="stat-value">₹1,00,000</div>
-                                    <div class="stat-label">Investment</div>
-                                </div>
-                                <div class="stat-box">
-                                    <div class="stat-value">48 * 3000</div>
-                                    <div class="stat-label">Months</div>
-                                </div>
-                                <div class="stat-box">
-                                    <div class="stat-value">₹1,44,000</div>
-                                    <div class="stat-label">Returns</div>
-                                </div>
-                            </div>
-                            <div class="mt-6 text-center">
-                                <div class="text-2xl font-bold" style="color: #1e88e5;">Total Value: ₹2,44,000</div>
-                                <div class="mt-2" style="color: #64748b;">(₹1,00,000 investment + ₹1,44,000 returns)</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mt-8">
-                    <h3 class="text-xl font-semibold mb-4 flex items-center" data-translate-key="returnMethodTitle">
-                        <i class="fas fa-calculator mr-2" style="color: #1e88e5;"></i>
-                        How the 3% Return is Generated
-                    </h3>
-                    <p data-translate-key="returnMethodParagraph1">The company uses the ₹1,00,000 investment to purchase a buffalo and a calf. The buffalo produces approximately 10 liters of milk daily. The member has two options:</p>
-
-                    <div class="grid md:grid-cols-2 gap-6 mt-6">
-                        <div class="feature-box">
-                            <div class="flex items-center mb-4">
-                                <i class="fas fa-wine-bottle text-3xl" style="color: #1e88e5; margin-right: 10px;"></i>
-                                <h4 class="text-xl font-bold" data-translate-key="option1">Receive 1.5 liters of milk daily</h4>
-                            </div>
-                            <p data-translate-key="option1Desc">Fresh milk delivered to your doorstep daily</p>
-                        </div>
-
-                        <div class="feature-box">
-                            <div class="flex items-center mb-4">
-                                <i class="fas fa-rupee-sign text-3xl" style="color: #1e88e5; margin-right: 10px;"></i>
-                                <h4 class="text-xl font-bold" data-translate-key="option2">Receive ₹3,000 per month</h4>
-                            </div>
-                            <p data-translate-key="option2Desc">Equivalent to the value of the milk (1.5 liters x 30 days)</p>
-                        </div>
-                    </div>
-
-                    <p class="mt-6" data-translate-key="returnMethodParagraph2">The remaining 8.5 liters of milk is sold or used in the company's restaurants, which is how the company generates its profit.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="withdrawal">
-            <h2 class="section-title" data-translate-key="withdrawalPolicyTitle">
-                <i class="fas fa-money-bill-transfer"></i>
-                Withdrawal Policy
-            </h2>
-
-            <div class="section-content">
-                <ul class="list-disc">
-                    <li data-translate-key="withdrawalPolicy1">If a member wishes to withdraw their investment before 24 months, a 10% deduction will be made from the total amount.</li>
-                    <li data-translate-key="withdrawalPolicy2">After completing 24 months, the full investment can be withdrawn without any deductions.</li>
-                </ul>
-
-                <div class="mt-8 grid md:grid-cols-2 gap-6">
-                    <div class="feature-box">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-exclamation-triangle text-3xl" style="color: #e74c3c; margin-right: 10px;"></i>
-                            <h4 class="text-xl font-bold" data-translate-key="earlyWithdrawal">Early Withdrawal</h4>
-                        </div>
-                        <p data-translate-key="earlyWithdrawalDesc">10% deduction if withdrawn before 24 months</p>
-                    </div>
-
-                    <div class="feature-box">
-                        <div class="flex items-center mb-4">
-                            <i class="fas fa-check-circle text-3xl" style="color: #1e88e5; margin-right: 10px;"></i>
-                            <h4 class="text-xl font-bold" data-translate-key="fullWithdrawal">Full Withdrawal</h4>
-                        </div>
-                        <p data-translate-key="fullWithdrawalDesc">No deductions after completing 24 months</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="requirements">
-            <h2 class="section-title" data-translate-key="requirementsTitle">
-                <i class="fas fa-file-alt"></i>
-                Required Documents
-            </h2>
-
-            <div class="section-content">
-                <p class="mb-4" data-translate-key="requirementsDescription">To become a member, the following documents are mandatory:</p>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
-                    <div class="feature-box flex items-start">
-                        <i class="fas fa-id-card text-2xl" style="color: #1e88e5; margin-right: 15px; margin-top: 3px;"></i>
-                        <div>
-                            <h4 class="text-lg font-bold" data-translate-key="doc1">Aadhaar Card</h4>
-                            <p data-translate-key="doc1Desc">Government ID proof</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-box flex items-start">
-                        <i class="fas fa-id-card text-2xl" style="color: #1e88e5; margin-right: 15px; margin-top: 3px;"></i>
-                        <div>
-                            <h4 class="text-lg font-bold" data-translate-key="doc2">PAN Card</h4>
-                            <p data-translate-key="doc2Desc">Tax identification card</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-box flex items-start">
-                        <i class="fas fa-university text-2xl" style="color: #1e88e5; margin-right: 15px; margin-top: 3px;"></i>
-                        <div>
-                            <h4 class="text-lg font-bold" data-translate-key="doc3">Bank Details</h4>
-                            <p data-translate-key="doc3Desc">Bank Name, Account Number, IFSC Code</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-box flex items-start">
-                        <i class="fas fa-mobile-alt text-2xl" style="color: #1e88e5; margin-right: 15px; margin-top: 3px;"></i>
-                        <div>
-                            <h4 class="text-lg font-bold" data-translate-key="doc4">Bank-linked Mobile Number</h4>
-                            <p data-translate-key="doc4Desc">For verification purposes</p>
-                        </div>
-                    </div>
-
-                    <div class="feature-box flex items-start">
-                        <i class="fas fa-user-friends text-2xl" style="color: #1e88e5; margin-right: 15px; margin-top: 3px;"></i>
-                        <div>
-                            <h4 class="text-lg font-bold" data-translate-key="doc5">Nominee Details</h4>
-                            <p data-translate-key="doc5Desc">Name, Age of nominee</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="section" id="contact">
-            <h2 class="section-title flex items-center justify-center gap-2 text-2xl font-bold mb-6" style="color: #1e88e5;" data-translate-key="contactTitle">
-                <i class="fas fa-address-book"></i>
-                Contact Information
-            </h2>
-
-            <div class="section-content">
-                <p class="text-center mb-8" style="color: #64748b;" data-translate-key="contactDescription">
-                    For more information, please reach out to us.
-                </p>
-
-                <div class="max-w-md mx-auto bg-white p-6 rounded-xl shadow-md">
-                    <div class="grid gap-4">
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-envelope" style="color: #1e88e5;"></i>
-                            </div>
-                            <div>
-                                <div class="font-medium" style="color: #64748b;" data-translate-key="emailLabel">Email:</div>
-                                <a href="mailto:avsdairyprojects@gmail.com" class="text-blue-500 hover:underline" data-translate-key="emailValue">
-                                    avsdairy786@gmail.com
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-phone" style="color: #1e88e5;"></i>
-                            </div>
-                            <div>
-                                <div class="font-medium" style="color: #64748b;" data-translate-key="phoneLabel">Phone:</div>
-                                <a href="tel:+919999156111" class="text-blue-500 hover:underline" data-translate-key="phoneValue">
-                                    +91-9999156111
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-map-marker-alt" style="color: #1e88e5;"></i>
-                            </div>
-                            <div>
-                                <div class="font-medium" style="color: #64748b;">Address:</div>
-                                <div class="" style="color: #475569;">
-                                   H.Office: Plot NO. 9/1 Mustil No. 4, Dera Village Near Asthal Mandir New Delhi - 110074
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                <i class="fas fa-globe" style="color: #1e88e5;"></i>
-                            </div>
-                            <div>
-                                <div class="font-medium" style="color: #64748b;">Official Website:</div>
-                                <a href="https://avsdairyprojects.com/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
-                                    avsdairyprojects.com
-                                </a>
-                            </div>
-                        </div>
-
-                        <div class="flex items-start gap-4">
-                            <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center mt-1">
-                                <i class="fab fa-youtube text-red-500"></i>
-                            </div>
-                            <div>
-                                <div class="font-medium" style="color: #64748b;">Official Channel:</div>
-                                <a href="https://www.youtube.com/@Avsdairybharat" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:underline">
-                                    AVS Dairy Bharat
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="mt-8 flex justify-center space-x-4">
-                        <a href="https://wa.me/9517173555" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
-                            <i class="fab fa-whatsapp"></i>
-                        </a>
-                        <a href="https://www.facebook.com/share/1LwXRmEtk5/" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.instagram.com/tikathhapa3333?igsh=ZnZvbmZ3dHV3YXp0" class="w-10 h-10 rounded-full bg-blue-500 flex items-center justify-center text-white hover:bg-blue-600 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <footer>
-            <p>&copy; 2025 AVS Group. All rights reserved.</p>
-        </footer>
+    <div class="copyright">
+      <p data-translate-key="copyright">&copy; 2025 TikkaThapa - AVS Group Leader. All Rights Reserved.</p>
+      <p style="margin-top: 0.5rem; font-size: 0.8rem;" data-translate-key="footer-address">AVS Dairy Projects
+        Limited | Registered Office: Fatehpur Beri, Delhi</p>
     </div>
-  
-   <script src="../js/avs-model.js"></script>
+  </footer>
+
+ <script src="../js/avs-model.js"></script>
 </body>
-</html>
 
+</html>
